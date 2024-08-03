@@ -21,7 +21,27 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["./src/*"],
+      // assets
+      "@images/*": ["./src/assets/images/*"],
+      "@styles/*": ["./src/assets/styles/*"],
+      // components
+      "@icons/*": ["./src/components/icons/*"],
+      "@common/*": ["./src/components/common/*"],
+      "@layout/*": ["src/components/layout/*"],
+      "@specific/*": ["./src/components/specific/*"],
+      // features
+      "@landing/*": ["./src/features/landing/*"],
+      // src
+      "@constants/*": ["./src/constants/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@locales/*": ["./src/locales/*"],
+      "@routes/*": ["./src/routes/*"]
+    }
   },
   "include": ["src"]
 }
