@@ -5,12 +5,12 @@ const Logo: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
 
   return (
     <svg
-      {...props}
       width="67"
       height="50"
       viewBox="0 0 67 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g id="&#208;&#187;&#208;&#190;&#208;&#179;&#208;&#190;">
         <g id="AG">

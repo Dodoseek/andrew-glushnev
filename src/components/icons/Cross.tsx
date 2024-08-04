@@ -5,12 +5,12 @@ const Cross: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
 
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="51"
       height="31"
       viewBox="0 0 51 31"
       fill="none"
+      {...props}
     >
       <path
         d="M50.9706 28.3733L49.9782 30.0656L0.985352 2.21965L1.97784 0.527344L50.9706 28.3733Z"

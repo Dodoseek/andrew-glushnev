@@ -2,7 +2,7 @@ $font-family-inter: "Inter";
 $font-family-pixel: "Pixel Ultima";
 $font-family-arial: Arial;
 
-$font-size-h1: 150px;
+$font-size-h1: 130px;
 $font-size-h2: 16px;
 $font-size-h3: 55px;
 $font-size-h4: 20px;
@@ -90,7 +90,7 @@ $text-transform-uppercase: uppercase;
 }
 
 .navigation {
-  @include base-styles($font-family-inter, $font-size-navigation, normal, 400, $line-height-100, 0, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-navigation, normal, 300, $line-height-100, 0, $text-transform-uppercase);
 }
 
 .cuption {
@@ -106,7 +106,7 @@ $text-transform-uppercase: uppercase;
 }
 
 // Media Queries
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
   .h1__normal,
   .h1__italic {
     font-size: 130px;
@@ -118,7 +118,7 @@ $text-transform-uppercase: uppercase;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .h1__normal,
   .h1__italic {
     font-size: 70px;
@@ -150,7 +150,7 @@ $text-transform-uppercase: uppercase;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .h1__normal,
   .h1__italic {
     font-size: 35px;
