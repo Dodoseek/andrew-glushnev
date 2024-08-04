@@ -37,10 +37,10 @@ export default function Main() {
       bgSize={"cover"}
       bgImage={mainBg}
     >
-      <SectionContainer>
-        <Header />
+      <SectionContainer minH={{ base: "650px", lg: "920px" }} h={"100dvh"}>
         <Flex
-          pt={{ base: "130px", md: "154px", lg: "40px", xl: "40px" }}
+          h={"100%"}
+          justifyContent={"center"}
           alignItems={"center"}
           flexDirection="column"
         >
@@ -110,11 +110,7 @@ export default function Main() {
             Разрабатываю сайты, тг-ботов, верстаю, пишу логику для вашего
             бизнеса
           </Text>
-          <BrandButton
-            mt={{ base: "110px", md: "40px", lg: "20px", xl: "30px" }}
-          >
-            Обсудить проект
-          </BrandButton>
+          <BrandButton mt={"30px"}>Обсудить проект</BrandButton>
         </Flex>
       </SectionContainer>
     </Container>
