@@ -1,0 +1,29 @@
+@import url("assets/styles/text.scss");
+@font-face {
+  font-family: "Pixel Ultima";
+  src: url("/fonts/pixelUltima/PixelUltima-Bold.eot");
+  src: url("/fonts/pixelUltima/PixelUltima-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/pixelUltima/PixelUltima-Bold.woff2") format("woff2"),
+    url("/fonts/pixelUltima/PixelUltima-Bold.woff") format("woff"),
+    url("/fonts/pixelUltima/PixelUltima-Bold.ttf") format("truetype"),
+    url("/fonts/pixelUltima/PixelUltima-Bold.svg#PixelUltima-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pixel Ultima";
+  src: url("/fonts/pixelUltima/PixelUltima.eot");
+  src: url("/fonts/pixelUltima/PixelUltima.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/pixelUltima/PixelUltima.woff2") format("woff2"),
+    url("/fonts/pixelUltima/PixelUltima.woff") format("woff"),
+    url("/fonts/pixelUltima/PixelUltima.ttf") format("truetype"),
+    url("/fonts/pixelUltima/PixelUltima.svg#PixelUltima") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

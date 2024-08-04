@@ -1,9 +1,10 @@
-import { Text } from "@chakra-ui/react";
+import LandingContainer from "@landing/layout/LandingContainer";
+import Main from "./sections/Main";
 
 export default function Landing() {
   return (
-    <Text fontSize={"xxx-large"} fontFamily={"Pixel Ultima"}>
-      Landing
-    </Text>
+    <LandingContainer>
+      <Main />
+    </LandingContainer>
   );
 }

@@ -1,0 +1,183 @@
+$font-family-inter: "Inter";
+$font-family-pixel: "Pixel Ultima";
+$font-family-arial: Arial;
+
+$font-size-h1: 150px;
+$font-size-h2: 16px;
+$font-size-h3: 55px;
+$font-size-h4: 20px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+$font-size-text1: 16px;
+$font-size-text2: 24px;
+$font-size-text3: 30px;
+$font-size-text4: 36px;
+$font-size-button: 16px;
+$font-size-navigation: 16px;
+$font-size-cuption: 14px;
+$font-size-descriptor: 36px;
+$font-size-descriptor2: 55px;
+
+$line-height-100: 100%;
+$line-height-120: 120%;
+
+$text-transform-uppercase: uppercase;
+
+// Base styles
+@mixin base-styles($font-family, $font-size, $font-style, $font-weight, $line-height, $letter-spacing, $text-transform: none) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}
+
+// Styles
+.h1 {
+  &__normal {
+    @include base-styles($font-family-inter, $font-size-h1, normal, 300, $line-height-100, -7.5px, $text-transform-uppercase);
+  }
+  
+  &__italic {
+    @include base-styles($font-family-inter, $font-size-h1, italic, 200, $line-height-100, -7.5px, $text-transform-uppercase);
+  }
+  
+  &__pixel {
+    @include base-styles($font-family-pixel, $font-size-h1, normal, 700, $line-height-100, 0, $text-transform-uppercase);
+  }
+}
+
+.h2 {
+  @include base-styles($font-family-inter, $font-size-h2, normal, 400, $line-height-100, -0.48px, $text-transform-uppercase);
+}
+
+.h3 {
+  @include base-styles($font-family-inter, $font-size-h3, normal, 300, $line-height-100, -2.75px, $text-transform-uppercase);
+}
+
+.h4 {
+  @include base-styles($font-family-inter, $font-size-h4, normal, 500, $line-height-100, -0.6px, $text-transform-uppercase);
+}
+
+.h5 {
+  @include base-styles($font-family-inter, $font-size-h5, normal, 600, $line-height-100, -0.48px);
+}
+
+.h6 {
+  @include base-styles($font-family-arial, $font-size-h6, normal, 400, $line-height-120, 1.4px, $text-transform-uppercase);
+}
+
+.text1 {
+  @include base-styles($font-family-inter, $font-size-text1, normal, 400, $line-height-120, -0.48px);
+}
+
+.text2 {
+  @include base-styles($font-family-inter, $font-size-text2, normal, 400, $line-height-120, -0.72px);
+}
+
+.text3 {
+  @include base-styles($font-family-inter, $font-size-text3, normal, 400, $line-height-120, -0.9px);
+}
+
+.text4 {
+  @include base-styles($font-family-inter, $font-size-text4, normal, 300, $line-height-120, -1.08px);
+}
+
+.button__text {
+  @include base-styles($font-family-inter, $font-size-button, normal, 600, $line-height-100, -0.48px, $text-transform-uppercase);
+}
+
+.navigation {
+  @include base-styles($font-family-inter, $font-size-navigation, normal, 400, $line-height-100, 0, $text-transform-uppercase);
+}
+
+.cuption {
+  @include base-styles($font-family-inter, $font-size-cuption, normal, 400, $line-height-100, -0.42px);
+}
+
+.descriptor {
+  @include base-styles($font-family-pixel, $font-size-descriptor, normal, 400, $line-height-120, -1.08px);
+}
+
+.descriptor2 {
+  @include base-styles($font-family-pixel, $font-size-descriptor2, normal, 400, $line-height-100, -1.65px, $text-transform-uppercase);
+}
+
+// Media Queries
+@media (max-width: 1300px) {
+  .h1__normal,
+  .h1__italic {
+    font-size: 130px;
+    letter-spacing: -6.5px;
+  }
+
+  .h1__pixel {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1__normal,
+  .h1__italic {
+    font-size: 70px;
+    letter-spacing: -3.5px;
+  }
+
+  .h1__pixel {
+    font-size: 70px;
+  }
+
+  .h3 {
+    font-size: 36px;
+    letter-spacing: -1.8px;
+  }
+
+  .text2 {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+
+  .text3 {
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
+
+  .descriptor {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h1__normal,
+  .h1__italic {
+    font-size: 35px;
+    letter-spacing: -1.75px;
+  }
+
+  .h1__pixel {
+    font-size: 48px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+
+  .text1 {
+    font-size: 14px;
+    letter-spacing: -0.42px;
+  }
+
+  .text4 {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .cuption {
+    font-size: 12px;
+    letter-spacing: -0.36px;
+  }
+}
