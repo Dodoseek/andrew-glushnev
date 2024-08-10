@@ -1,15 +1,14 @@
 import LandingContainer from "@landing/layout/LandingContainer";
-import Main from "./sections/Main";
+import Main from "@landing/sections/Main";
+import AboutMe from "@landing/sections/AboutMe";
 import Header from "@/components/common/Header";
-import SectionContainer from "@common/SectionContainer";
 
 export default function Landing() {
   return (
     <LandingContainer>
-      <SectionContainer zIndex={50} position={"fixed"} left={0} right={0}>
-        <Header />
-      </SectionContainer>
+      <Header />
       <Main />
+      <AboutMe />
     </LandingContainer>
   );
 }

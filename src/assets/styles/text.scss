@@ -2,21 +2,14 @@ $font-family-inter: "Inter";
 $font-family-pixel: "Pixel Ultima";
 $font-family-arial: Arial;
 
-$font-size-h1: 130px;
-$font-size-h2: 16px;
-$font-size-h3: 55px;
-$font-size-h4: 20px;
-$font-size-h5: 16px;
-$font-size-h6: 14px;
-$font-size-text1: 16px;
-$font-size-text2: 24px;
-$font-size-text3: 30px;
-$font-size-text4: 36px;
-$font-size-button: 16px;
-$font-size-navigation: 16px;
-$font-size-cuption: 14px;
-$font-size-descriptor: 36px;
-$font-size-descriptor2: 55px;
+$font-size-130: 130px;
+$font-size-55: 55px;
+$font-size-36: 36px;
+$font-size-30: 30px;
+$font-size-24: 24px;
+$font-size-20: 20px;
+$font-size-16: 16px;
+$font-size-14: 14px;
 
 $line-height-100: 100%;
 $line-height-120: 120%;
@@ -37,72 +30,80 @@ $text-transform-uppercase: uppercase;
 // Styles
 .h1 {
   &__normal {
-    @include base-styles($font-family-inter, $font-size-h1, normal, 300, $line-height-100, -7.5px, $text-transform-uppercase);
+    @include base-styles($font-family-inter, $font-size-130, normal, 300, $line-height-100, -7.5px, $text-transform-uppercase);
   }
   
   &__italic {
-    @include base-styles($font-family-inter, $font-size-h1, italic, 200, $line-height-100, -7.5px, $text-transform-uppercase);
+    @include base-styles($font-family-inter, $font-size-130, italic, 200, $line-height-100, -7.5px, $text-transform-uppercase);
   }
   
   &__pixel {
-    @include base-styles($font-family-pixel, $font-size-h1, normal, 700, $line-height-100, 0, $text-transform-uppercase);
+    @include base-styles($font-family-pixel, $font-size-130, normal, 700, $line-height-100, 0, $text-transform-uppercase);
   }
 }
 
 .h2 {
-  @include base-styles($font-family-inter, $font-size-h2, normal, 400, $line-height-100, -0.48px, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-16, normal, 400, $line-height-100, -0.48px, $text-transform-uppercase);
 }
 
 .h3 {
-  @include base-styles($font-family-inter, $font-size-h3, normal, 300, $line-height-100, -2.75px, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-55, normal, 300, $line-height-100, -2.75px, $text-transform-uppercase);
 }
 
 .h4 {
-  @include base-styles($font-family-inter, $font-size-h4, normal, 500, $line-height-100, -0.6px, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-20, normal, 500, $line-height-100, -0.6px, $text-transform-uppercase);
 }
 
 .h5 {
-  @include base-styles($font-family-inter, $font-size-h5, normal, 600, $line-height-100, -0.48px);
+  @include base-styles($font-family-inter, $font-size-16, normal, 600, $line-height-100, -0.48px);
 }
 
 .h6 {
-  @include base-styles($font-family-arial, $font-size-h6, normal, 400, $line-height-120, 1.4px, $text-transform-uppercase);
+  @include base-styles($font-family-arial, $font-size-14, normal, 400, $line-height-120, 1.4px, $text-transform-uppercase);
 }
 
 .text1 {
-  @include base-styles($font-family-inter, $font-size-text1, normal, 400, $line-height-120, -0.48px);
+  @include base-styles($font-family-inter, $font-size-16, normal, 400, $line-height-120, -0.48px);
 }
 
 .text2 {
-  @include base-styles($font-family-inter, $font-size-text2, normal, 400, $line-height-120, -0.72px);
+  @include base-styles($font-family-inter, $font-size-24, normal, 400, $line-height-120, -0.72px);
 }
 
 .text3 {
-  @include base-styles($font-family-inter, $font-size-text3, normal, 400, $line-height-120, -0.9px);
+  @include base-styles($font-family-inter, $font-size-30, normal, 400, $line-height-120, -0.9px);
 }
 
 .text4 {
-  @include base-styles($font-family-inter, $font-size-text4, normal, 300, $line-height-120, -1.08px);
+  @include base-styles($font-family-inter, $font-size-36, normal, 300, $line-height-120, -1.08px);
 }
 
 .button__text {
-  @include base-styles($font-family-inter, $font-size-button, normal, 600, $line-height-100, -0.48px, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-16, normal, 600, $line-height-100, -0.48px, $text-transform-uppercase);
 }
 
 .navigation {
-  @include base-styles($font-family-inter, $font-size-navigation, normal, 300, $line-height-100, 0, $text-transform-uppercase);
+  @include base-styles($font-family-inter, $font-size-16, normal, 300, $line-height-100, 0, $text-transform-uppercase);
 }
 
 .cuption {
-  @include base-styles($font-family-inter, $font-size-cuption, normal, 400, $line-height-100, -0.42px);
+  @include base-styles($font-family-inter, $font-size-14, normal, 400, $line-height-100, -0.42px);
 }
 
 .descriptor {
-  @include base-styles($font-family-pixel, $font-size-descriptor, normal, 400, $line-height-120, -1.08px);
+  @include base-styles($font-family-pixel, $font-size-36, normal, 400, $line-height-120, -1.08px);
 }
 
 .descriptor2 {
-  @include base-styles($font-family-pixel, $font-size-descriptor2, normal, 400, $line-height-100, -1.65px, $text-transform-uppercase);
+  @include base-styles($font-family-pixel, $font-size-55, normal, 400, $line-height-100, -1.65px, $text-transform-uppercase);
+}
+
+.numbers1 {
+  @include base-styles($font-family-pixel, $font-size-16, normal, 400, $line-height-100, 0);
+}
+
+.numbers2 {
+  @include base-styles($font-family-pixel, $font-size-30, normal, 700, $line-height-100, 0);
 }
 
 // Media Queries

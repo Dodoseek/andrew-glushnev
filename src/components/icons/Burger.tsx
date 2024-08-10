@@ -1,8 +1,8 @@
 import { useBrandTheme } from "@specific/themeContext";
 
-const Burger: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
+const Burger: React.FC<React.SVGAttributes<SVGSVGElement>> = (SVGprops) => {
   const theme = useBrandTheme();
-
+  const { fill, ...props } = SVGprops;
   return (
     <svg
       width="50"
@@ -18,7 +18,7 @@ const Burger: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
         width="2"
         height="50"
         transform="rotate(90 50 12)"
-        fill={theme.colors.primary}
+        fill={fill || theme.colors.primary.default}
       />
       <rect
         x="50"
@@ -26,7 +26,7 @@ const Burger: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
         width="2"
         height="50"
         transform="rotate(90 50 24)"
-        fill={theme.colors.primary}
+        fill={fill || theme.colors.primary.default}
       />
       <rect
         x="50"
@@ -34,7 +34,7 @@ const Burger: React.FC<React.SVGAttributes<SVGSVGElement>> = (props) => {
         width="2"
         height="50"
         transform="rotate(90 50 36)"
-        fill={theme.colors.primary}
+        fill={fill || theme.colors.primary.default}
       />
     </svg>
   );

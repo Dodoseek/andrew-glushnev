@@ -7,7 +7,6 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import mainBg from "@images/main__bg.jpg";
-import Header from "@common/Header";
 import SectionContainer from "@common/SectionContainer";
 import heroImg from "@landing/assets/images/hero.jpg";
 import Rock from "@icons/Rock";
@@ -28,6 +27,7 @@ export default function Main() {
   const theme = useBrandTheme();
   return (
     <Container
+      as={"section"}
       maxW={"100%"}
       minH={"100dvh"}
       h={"fit-content"}
@@ -56,7 +56,11 @@ export default function Main() {
           >
             <Rock width={iconBox} height={iconBox} />
             <Lamp width={iconBox} height={iconBox} />
-            <Text color={theme.colors.primary} className="h1__normal">
+            <Text
+              as={"h2"}
+              color={theme.colors.primary.default}
+              className="h1__normal"
+            >
               Fullstack
             </Text>
             <Dino width={iconBox} height={iconBox} />
@@ -65,9 +69,10 @@ export default function Main() {
           <Flex alignItems={"center"}>
             <Computer width={iconBox} height={iconBox} />
             <Text
+              as={"h2"}
               ms={{ base: "5px", md: "14px", lg: "8px", xl: "20px" }}
               me={{ base: "10px", md: "20px", lg: "30px" }}
-              color={theme.colors.primary}
+              color={theme.colors.primary.default}
               className="h1__italic"
             >
               разработчик
@@ -75,11 +80,12 @@ export default function Main() {
             <Glasses width={iconBox} height={iconBox} />
           </Flex>
           <Flex
+            as={"h1"}
             textAlign={{ base: "center" }}
             flexDir={{ base: "column", md: "row" }}
             mt={"12px"}
           >
-            <Text color={theme.colors.primary} className="h1__pixel">
+            <Text color={theme.colors.primary.default} className="h1__pixel">
               Андрей
             </Text>
             <Box ms={{ md: 4, lg: 6 }}>
@@ -87,14 +93,14 @@ export default function Main() {
                 as={"span"}
                 position={"relative"}
                 left={{ base: 1, md: 2, lg: 3, xl: 4 }}
-                color={theme.colors.primary}
+                color={theme.colors.primary.default}
                 className="h1__pixel"
               >
                 Г
               </Text>
               <Text
                 as={"span"}
-                color={theme.colors.primary}
+                color={theme.colors.primary.default}
                 className="h1__pixel"
               >
                 лушнев

@@ -71,13 +71,13 @@ const NavDrawer = () => {
                 sx={{
                   "@media (hover: hover)": {
                     "&:hover": {
-                      textColor: theme.colors.primary,
+                      textColor: theme.colors.primary.default,
                       textDecor: "none",
                     },
                   },
                   "@media (hover: none)": {
                     "&:active": {
-                      textColor: theme.colors.primary,
+                      textColor: theme.colors.primary.default,
                     },
                   },
                 }}
