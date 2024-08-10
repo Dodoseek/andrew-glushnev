@@ -7,8 +7,8 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import aboutMeElements from "@landing/constants/aboutMeElements";
-import LeftBracket from "@icons/LeftBracket";
-import RightBracket from "@icons/RightBracket";
+import LeftBracket from "@/features/landing/components/icons/LeftBracket";
+import RightBracket from "@/features/landing/components/icons/RightBracket";
 import { useBrandTheme } from "@specific/themeContext";
 import { useState } from "react";
 
