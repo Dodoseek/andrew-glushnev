@@ -77,7 +77,12 @@ const AdvantagesAccordion = () => {
                 }}
               >
                 <GridItem colSpan={3} as={Flex} alignItems={"center"}>
-                  ИКОНКА
+                  {
+                    <element.icon
+                      color="primary.default"
+                      boxSize={{ base: "40px", md: "60px", lg: "80px" }}
+                    />
+                  }
                 </GridItem>
                 <GridItem
                   colSpan={5}
@@ -89,6 +94,9 @@ const AdvantagesAccordion = () => {
                   flexDirection={"column"}
                 >
                   <Text
+                    display={"flex"}
+                    alignItems={"center"}
+                    h={{ base: "40px", md: "60px", lg: "80px" }}
                     pointerEvents={"none"}
                     color={"primary.default"}
                     textAlign={"start"}
@@ -105,7 +113,6 @@ const AdvantagesAccordion = () => {
                         md: "370px",
                         lg: "570px",
                       }}
-                      mt={"10px"}
                       textAlign={"start"}
                       className="text1"
                       color={"white.50"}
@@ -115,7 +122,13 @@ const AdvantagesAccordion = () => {
                   </Collapse>
                 </GridItem>
 
-                <GridItem as={Flex} colSpan={1} justifyContent={"end"}>
+                <GridItem
+                  as={Flex}
+                  h={"100%"}
+                  alignItems={"start"}
+                  mt={{ base: "7px", md: "10px" }}
+                  justifyContent={"end"}
+                >
                   {isOpen ? (
                     <Minus
                       boxSize={{ base: "26px", md: "36px", lg: "55px" }}
