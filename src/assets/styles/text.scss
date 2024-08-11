@@ -106,6 +106,10 @@ $text-transform-uppercase: uppercase;
   @include base-styles($font-family-pixel, $font-size-30, normal, 700, $line-height-100, 0);
 }
 
+.price{
+  @include base-styles($font-family-inter, $font-size-20, normal, 400, $line-height-120, -0.6px);
+}
+
 // Media Queries
 @media (max-width: 1600px) {
   .h1__normal,

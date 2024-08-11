@@ -1,6 +1,5 @@
 import {
   Text,
-  SimpleGrid,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -14,12 +13,9 @@ import {
 import advantagesElements from "@landing/constants/advantagesElements";
 import Plus from "@landing/components/icons/Plus";
 import Minus from "@landing/components/icons/Minus";
-import { useBrandTheme } from "@/components/specific/themeContext";
 import { useHoverActive } from "@hooks/useHoverActive";
 
 const AdvantagesAccordion = () => {
-  const theme = useBrandTheme();
-
   return (
     <Accordion as={Flex} gap={"10px"} flexDir={"column"} w={"100%"} allowToggle>
       {advantagesElements.map((element) => {
@@ -123,20 +119,12 @@ const AdvantagesAccordion = () => {
                   {isOpen ? (
                     <Minus
                       boxSize={{ base: "26px", md: "36px", lg: "55px" }}
-                      color={
-                        isHoverEffect
-                          ? theme.colors.primary.default
-                          : theme.colors.primary.dark
-                      }
+                      color={isHoverEffect ? "primary.default" : "primary.dark"}
                     />
                   ) : (
                     <Plus
                       boxSize={{ base: "26px", md: "36px", lg: "55px" }}
-                      color={
-                        isHoverEffect
-                          ? theme.colors.primary.default
-                          : theme.colors.primary.dark
-                      }
+                      color={isHoverEffect ? "primary.default" : "primary.dark"}
                     />
                   )}
                 </GridItem>
