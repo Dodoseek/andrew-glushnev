@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-export function useHoverActive() {
+export default function useHoverActive() {
   const [isHovering, setIsHovering] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);

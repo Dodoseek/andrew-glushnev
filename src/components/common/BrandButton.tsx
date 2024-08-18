@@ -18,7 +18,7 @@ const BrandButton: React.FC<BrandButtonProps> = ({ children, ...props }) => {
       bgColor={theme.colors.blackCard1}
       border={"1px solid var(rgba(0, 234, 234, 0.05))"}
       h={"50px"}
-      w={{ base: "330px", md: "480px" }}
+      w={{ base: "100%", sm: "330px", md: "480px" }}
       {...props}
       color={theme.colors.primary.default}
       _hover={{

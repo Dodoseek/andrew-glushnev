@@ -4,6 +4,7 @@ import AboutMe from "@landing/sections/AboutMe";
 import Header from "@common/Header";
 import CleanCode from "@landing/sections/CleanCode";
 import Services from "@landing/sections/Services";
+import Partnership from "@landing/sections/Partnership";
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
       <AboutMe />
       <CleanCode />
       <Services />
+      <Partnership />
     </LandingContainer>
   );
 }

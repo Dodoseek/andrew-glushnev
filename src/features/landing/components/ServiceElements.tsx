@@ -1,4 +1,4 @@
-import { useHoverActive } from "@hooks/useHoverActive";
+import useHoverActive from "@hooks/useHoverActive";
 import { Box, Text, useDisclosure, Collapse } from "@chakra-ui/react";
 import serviceElements from "@landing/constants/serviceElements";
 import Minus from "@landing/components/icons/Minus";
@@ -8,7 +8,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const ServiceElements = () => {
   return (
     <ResponsiveMasonry
-      columnsCountBreakPoints={{ 0: 1, 768: 2, 1300: 4 }}
+      columnsCountBreakPoints={{ 0: 1, 767: 2, 1299: 4 }}
       style={{ width: "100%" }}
     >
       <Masonry style={{ display: "flex", gap: "10px" }}>

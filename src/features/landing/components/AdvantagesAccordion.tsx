@@ -13,7 +13,7 @@ import {
 import advantagesElements from "@landing/constants/advantagesElements";
 import Plus from "@landing/components/icons/Plus";
 import Minus from "@landing/components/icons/Minus";
-import { useHoverActive } from "@hooks/useHoverActive";
+import useHoverActive from "@hooks/useHoverActive";
 
 const AdvantagesAccordion = () => {
   return (
